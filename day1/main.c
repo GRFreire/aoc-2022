@@ -32,6 +32,8 @@ void part1(void) {
       }
   }
 
+  fclose(input);
+
   printf("%d\n", max);
 }
 
@@ -64,6 +66,8 @@ void part2(void) {
           current = 0;
       }
   }
+
+  fclose(input);
 
   if (current > max3) swapi(&current, &max3);
   if (max3 > max2) swapi(&max3, &max2);
