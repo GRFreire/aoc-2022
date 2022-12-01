@@ -32,6 +32,9 @@ void part1(void) {
       }
   }
 
+  if (current > max) max = current;
+  current = 0;
+ 
   fclose(input);
 
   printf("%d\n", max);
